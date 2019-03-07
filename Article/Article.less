@@ -13,6 +13,8 @@
   overflow: hidden;
   box-shadow: 2px 2px 2px lightgrey;
 
+  transition: height 0.8s ease-in;
+
   h2 {
     font-size: 28px;
     padding: 0;
@@ -39,6 +41,27 @@
     cursor: pointer;
     transform: translate(-50%);
     background-color: white;
+  }
+
+  .closeButton {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-size: 16px;
+    color: rgb(221, 219, 219);
+    cursor: pointer;
+    transform: translate(-50%);
+    background-color: rgb(77, 20, 20);
+    display: none;
+    padding: 6px;
+  }
+
+  .showButton {
+    display: block;
+  }
+
+  .hideButton {
+    display: none;
   }
 }
 
